@@ -1,16 +1,86 @@
-# React + Vite
+# Websiteble UI – React Implementation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a responsive React-based implementation of a landing page built from a Figma design. The goal was to translate the visual design into a clean, functional UI while keeping the structure simple and reusable.
 
-Currently, two official plugins are available:
+## 🔍 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The website focuses on presenting a modern learning/product platform with a strong emphasis on typography, layout, and spacing. Each section is built as a separate React component to keep the code organized and maintainable.
 
-## React Compiler
+## ⚙️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React (Vite)
+* Tailwind CSS
+* JavaScript (ES6+)
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Fully responsive layout (mobile, tablet, desktop)
+* Component-based structure
+* Clean and readable UI
+* Basic hover interactions and transitions
+* Consistent spacing and typography
+
+## 📁 Project Structure
+
+```
+src/
+ ├── components/
+ ├── sections/
+ │    ├── Hero.jsx
+ │    ├── Highlights.jsx
+ │    ├── Growth.jsx
+ │    ├── Offerings.jsx
+ │    ├── Testimonials.jsx
+ │    ├── Newsletter.jsx
+ │    └── Footer.jsx
+ ├── App.jsx
+ └── main.jsx
+```
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```
+git clone https://github.com/your-username/websiteble-ui.git
+```
+
+Install dependencies:
+
+```
+npm install
+```
+
+Run the development server:
+
+```
+npm run dev
+```
+
+Build for production:
+
+```
+npm run build
+```
+
+## 🎯 Notes
+
+* Focus was given to matching the Figma layout as closely as possible while keeping the code simple.
+* Some visual elements (decorations/illustrations) were simplified where needed.
+* Styling is done using Tailwind for faster iteration and consistency.
+
+## 📌 What I Learned
+
+* Converting design → code requires attention to spacing more than just components
+* Small UI details (hover, alignment, typography) make a big difference
+* Structuring components early saves a lot of refactoring later
+
+## 📎 Future Improvements
+
+* Add animations for better visual engagement
+* Improve accessibility (ARIA roles, keyboard navigation)
+* Optimize images and performance
+
+---
+
+Feel free to explore or suggest improvements.
