@@ -12,14 +12,14 @@ const Offerings = () => {
         What we offer
       </h2>
 
-      <ul className="mt-6 space-y-4 text-gray-600">
+      <ul className="mt-10 max-w-xl mx-auto text-left">
         {offerings.map((item, i) => (
           <li
             key={i}
-            className="flex justify-center items-center gap-3 text-lg leading-none"
+            className="flex justify-between items-center py-4 border-b border-gray-200 text-lg hover:pl-2 transition-all duration-300 ease-in-out"
           >
-            <span className="text-black">✔</span>
-            {item}
+            <span className="text-gray-700">{item}</span>
+            <span className="text-xl">→</span>
           </li>
         ))}
       </ul>
@@ -29,4 +29,3 @@ const Offerings = () => {
 };
 
 export default Offerings;
-
