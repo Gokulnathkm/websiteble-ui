@@ -11,7 +11,7 @@ const cardData = [
 
 const Highlights = () => {
   return (
-    <section className="max-w-5xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-8">
+    <section className="max-w-4xl mx-auto px-4 py-24 grid md:grid-cols-2 gap-8">
       {cardData.map((item, i) => (
         <div
           key={i}

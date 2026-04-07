@@ -8,7 +8,7 @@ const Hero = () => {
         Where thinkers and builders create what’s next
       </h1>
 
-      <p className="mt-6 text-gray-500 max-w-xl mx-auto text-lg leading-relaxed">
+      <p className="mt-5 text-gray-500 max-w-xl mx-auto text-lg leading-relaxed">
         A space designed for people who want to learn faster, build better, and grow together.
       </p>
 

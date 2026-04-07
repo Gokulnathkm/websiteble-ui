@@ -10,7 +10,7 @@ const Newsletter = () => {
         <input
           type="email"
           placeholder="Enter your email"
-          className="px-4 py-3 border border-gray-300 rounded-lg w-full sm:w-72 focus:outline-none focus:ring-2 focus:ring-black transition-all duration-300 ease-in-out"
+          className="px-4 py-3 border border-gray-300 rounded-lg w-full sm:w-80 focus:outline-none focus:ring-2 focus:ring-black transition-all duration-300 ease-in-out"
         />
 
         <button className="bg-black text-white px-6 py-3 rounded-lg hover:opacity-90 active:scale-95 transition-all duration-300 ease-in-out">
