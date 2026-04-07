@@ -1,7 +1,7 @@
 const Newsletter = () => {
   return (
-    <section className="bg-gray-100 py-16 px-4 text-center">
-      <h2 className="text-2xl font-semibold">
+    <section className="bg-gray-100 py-20 px-4 text-center">
+      <h2 className="text-2xl md:text-3xl font-semibold">
         Stay updated
       </h2>
 
@@ -9,9 +9,10 @@ const Newsletter = () => {
         <input
           type="email"
           placeholder="Enter your email"
-          className="px-4 py-2 border rounded-md w-full sm:w-72"
+          className="px-4 py-2 border border-gray-300 rounded-lg w-full sm:w-72 focus:outline-none focus:ring-2 focus:ring-black"
         />
-        <button className="bg-black text-white px-6 py-2 rounded-md hover:opacity-80 transition">
+
+        <button className="bg-black text-white px-6 py-2 rounded-lg hover:opacity-90 transition">
           Subscribe
         </button>
       </div>
