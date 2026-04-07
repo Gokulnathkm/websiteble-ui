@@ -1,27 +1,66 @@
+const avatars = [
+  { src: 'https://i.pravatar.cc/200?img=11', size: 'w-[100px] h-[100px] md:w-[130px] md:h-[130px]' },
+  { src: 'https://i.pravatar.cc/200?img=12', size: 'w-[80px] h-[80px] md:w-[110px] md:h-[110px]' },
+  { src: 'https://i.pravatar.cc/200?img=32', size: 'w-[110px] h-[110px] md:w-[140px] md:h-[140px]' },
+  { src: 'https://i.pravatar.cc/200?img=5', size: 'w-[70px] h-[70px] md:w-[100px] md:h-[100px]' },
+  { src: 'https://i.pravatar.cc/200?img=15', size: 'w-[90px] h-[90px] md:w-[120px] md:h-[120px]' },
+  { src: 'https://i.pravatar.cc/200?img=22', size: 'w-[80px] h-[80px] md:w-[110px] md:h-[110px]' },
+  { src: 'https://i.pravatar.cc/200?img=33', size: 'w-[100px] h-[100px] md:w-[130px] md:h-[130px]' },
+  { src: 'https://i.pravatar.cc/200?img=36', size: 'w-[90px] h-[90px] md:w-[120px] md:h-[120px]' },
+  { src: 'https://i.pravatar.cc/200?img=47', size: 'w-[80px] h-[80px] md:w-[110px] md:h-[110px]' },
+];
+
 const Hero = () => {
   return (
-    <section className="text-center py-24 relative overflow-hidden">
+    <section className="relative overflow-hidden pt-4 pb-10 md:pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
+      {/* Curved pink line - left decoration */}
+      <svg
+        className="absolute top-[20%] left-[-30px] w-[80px] h-[300px] opacity-60 hidden lg:block"
+        viewBox="0 0 80 300"
+      >
+        <path d="M 60 0 Q 10 75, 50 150 Q 90 225, 40 300" fill="none" stroke="#FF6B6B" strokeWidth="2" />
+      </svg>
 
-      <h1 className="text-4xl md:text-6xl font-bold leading-tight max-w-3xl mx-auto">
-        Where thinkers and builders create what's next
-      </h1>
-
-      <p className="mt-5 text-gray-500 max-w-xl mx-auto">
-        A space designed for people who want to learn faster, build better, and grow together.
-      </p>
-
-      {/* Avatar Row */}
-      <div className="flex justify-center mt-6 -space-x-3">
-        {[1, 2, 3, 4, 5].map((i) => (
-          <img
-            key={i}
-            src={`https://i.pravatar.cc/100?img=${i}`}
-            className="w-10 h-10 rounded-full border-2 border-white"
-            alt="user"
-          />
-        ))}
+      {/* Purple half-circle decoration - right side */}
+      <div className="absolute top-[25%] right-[5%] hidden md:block animate-float">
+        <div className="purple-half" style={{ width: '50px', height: '25px' }} />
       </div>
 
+      {/* Hero heading with highlights */}
+      <div className="text-center mt-6 md:mt-10">
+        <h1 className="font-serif text-4xl md:text-6xl lg:text-[4.5rem] leading-[1.15] tracking-tight">
+          The <span className="highlight-underline">thinkers</span> and
+          <br />
+          doers were <span className="highlight-pink">changing</span>
+          <br />
+          the <span className="highlight-green">status</span> Quo with
+        </h1>
+      </div>
+
+      {/* Subtitle */}
+      <p className="text-center mt-6 text-gray-500 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+        We are a team of strategists, designers communicators,
+        Togeather, we belive that progress only happens when you refuse to play things safe.
+      </p>
+
+      {/* Scattered circular avatar photos */}
+      <div className="flex flex-wrap justify-center items-end gap-4 md:gap-5 mt-10 md:mt-14 px-0 md:px-8">
+        {avatars.map((avatar, i) => (
+          <div
+            key={i}
+            className={`rounded-full overflow-hidden bg-gray-100 flex-shrink-0 ${avatar.size}`}
+            style={{
+              marginTop: i % 2 === 0 ? '0px' : '20px',
+            }}
+          >
+            <img
+              src={avatar.src}
+              alt={`Team member ${i + 1}`}
+              className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+        ))}
+      </div>
     </section>
   );
 };
