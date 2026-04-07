@@ -12,7 +12,9 @@ const avatars = [
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden pt-4 pb-10 md:pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
+    <section className="relative overflow-hidden pt-4 pb-16 md:pb-28 px-6 lg:px-12 max-w-[1400px] mx-auto">
+      {/* Small red diamond decoration - left */}
+      <div className="absolute top-[60%] left-[3%] w-4 h-4 bg-red-400 rotate-45 opacity-60 hidden lg:block animate-float" />
       {/* Curved pink line - left decoration */}
       <svg
         className="absolute top-[20%] left-[-30px] w-[80px] h-[300px] opacity-60 hidden lg:block"
@@ -48,7 +50,7 @@ const Hero = () => {
         {avatars.map((avatar, i) => (
           <div
             key={i}
-            className={`rounded-full overflow-hidden bg-gray-100 flex-shrink-0 ${avatar.size}`}
+            className={`rounded-full overflow-hidden bg-gray-100 flex-shrink-0 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 ease-in-out ${avatar.size}`}
             style={{
               marginTop: i % 2 === 0 ? '0px' : '20px',
             }}

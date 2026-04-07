@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section className="relative px-6 lg:px-12 py-16 md:py-24 max-w-[1400px] mx-auto overflow-hidden">
+    <section className="relative px-6 lg:px-12 py-20 md:py-28 max-w-[1400px] mx-auto overflow-hidden">
       {/* Pink radial gradient glow - background */}
       <div className="absolute top-[10%] left-[40%] pink-glow hidden lg:block" />
 
@@ -39,7 +39,7 @@ const About = () => {
           </div>
 
           {/* Large circular photo */}
-          <div className="relative w-[280px] h-[280px] md:w-[350px] md:h-[350px] rounded-full overflow-hidden z-10 shadow-xl">
+          <div className="relative w-[280px] h-[280px] md:w-[350px] md:h-[350px] rounded-full overflow-hidden z-10 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 ease-in-out">
             <img
               src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=500&h=500&fit=crop&crop=center"
               alt="Business team in meeting"

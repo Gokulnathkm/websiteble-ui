@@ -12,7 +12,7 @@ const avatarsRight = [
 
 const Testimonials = () => {
   return (
-    <section className="relative px-6 lg:px-12 py-16 md:py-24 max-w-[1400px] mx-auto">
+    <section className="relative px-6 lg:px-12 py-20 md:py-28 max-w-[1400px] mx-auto">
       {/* Section heading with marker highlights */}
       <h2 className="font-hand text-3xl md:text-4xl lg:text-[2.5rem] text-center leading-snug mb-12 md:mb-16">
         <span className="highlight-marker">What</span> our customer
@@ -29,13 +29,13 @@ const Testimonials = () => {
               key={i}
               src={src}
               alt={`Customer ${i + 1}`}
-              className="w-12 h-12 lg:w-16 lg:h-16 rounded-full object-cover shadow-md hover:scale-110 transition-transform duration-200"
+              className="w-12 h-12 lg:w-16 lg:h-16 rounded-full object-cover shadow-md hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out"
             />
           ))}
         </div>
 
         {/* Testimonial card */}
-        <div className="bg-gray-50 border border-gray-100 rounded-2xl p-6 md:p-8 lg:p-10 max-w-xl shadow-sm">
+        <div className="bg-gray-50 border border-gray-100 rounded-2xl p-6 md:p-8 lg:p-10 max-w-xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ease-in-out">
           <div className="text-brand-green text-5xl font-serif leading-none mb-3">"</div>
 
           <p className="text-gray-600 text-sm md:text-base leading-relaxed">
@@ -54,7 +54,7 @@ const Testimonials = () => {
               key={i}
               src={src}
               alt={`Customer ${i + 4}`}
-              className="w-12 h-12 lg:w-16 lg:h-16 rounded-full object-cover shadow-md hover:scale-110 transition-transform duration-200"
+              className="w-12 h-12 lg:w-16 lg:h-16 rounded-full object-cover shadow-md hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out"
             />
           ))}
         </div>

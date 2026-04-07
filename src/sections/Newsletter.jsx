@@ -1,7 +1,7 @@
 const Newsletter = () => {
   return (
-    <section className="px-6 lg:px-12 py-16 md:py-24 max-w-[1400px] mx-auto">
-      <div className="bg-brand-mint rounded-2xl px-6 md:px-12 lg:px-20 py-12 md:py-16 text-center relative overflow-hidden">
+    <section className="px-6 lg:px-12 py-20 md:py-28 max-w-[1400px] mx-auto">
+      <div className="bg-brand-mint rounded-3xl px-6 md:px-12 lg:px-20 py-14 md:py-20 text-center relative overflow-hidden hover:shadow-lg transition-all duration-300 ease-in-out">
         {/* Purple blob decoration */}
         <div className="absolute top-[15%] right-[5%] md:right-[8%] hidden md:block animate-float">
           <div className="purple-blob w-[60px] h-[80px]" />

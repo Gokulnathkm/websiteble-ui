@@ -15,7 +15,7 @@ const offerings = [
 
 const Offerings = () => {
   return (
-    <section className="relative px-6 lg:px-12 py-16 md:py-24 max-w-[1400px] mx-auto overflow-hidden">
+    <section className="relative px-6 lg:px-12 py-20 md:py-28 max-w-[1400px] mx-auto overflow-hidden">
       {/* Curved red line decoration */}
       <svg
         className="flowing-line absolute top-[-50px] right-[10%] w-[300px] h-[calc(100%+100px)] opacity-40 hidden lg:block"
@@ -35,7 +35,7 @@ const Offerings = () => {
         {offerings.map((item, i) => (
           <div
             key={i}
-            className="flex flex-col md:flex-row items-start md:items-center border-b border-gray-200 py-5 md:py-6 group cursor-pointer hover:bg-gray-50 transition-colors duration-200 px-2 rounded"
+            className="flex flex-col md:flex-row items-start md:items-center border-b border-gray-200 py-5 md:py-7 group cursor-pointer hover:bg-gray-50 hover:pl-4 transition-all duration-300 ease-in-out px-2 rounded"
           >
             {/* Left small description */}
             <p className="text-xs md:text-sm text-gray-500 md:w-[280px] lg:w-[320px] flex-shrink-0 mb-2 md:mb-0">

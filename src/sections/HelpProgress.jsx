@@ -1,6 +1,6 @@
 const HelpProgress = () => {
   return (
-    <section className="relative px-6 lg:px-12 py-16 md:py-24 max-w-[1400px] mx-auto overflow-hidden">
+    <section className="relative px-6 lg:px-12 py-20 md:py-28 max-w-[1400px] mx-auto overflow-hidden">
       {/* Curved red line connecting from previous section */}
       <svg
         className="flowing-line absolute top-[-100px] right-[30%] w-[400px] h-[calc(100%+200px)] opacity-50 hidden lg:block"
@@ -18,7 +18,7 @@ const HelpProgress = () => {
           </div>
 
           {/* Large circular photo */}
-          <div className="relative w-[280px] h-[280px] md:w-[350px] md:h-[350px] rounded-full overflow-hidden z-10 shadow-xl">
+          <div className="relative w-[280px] h-[280px] md:w-[350px] md:h-[350px] rounded-full overflow-hidden z-10 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 ease-in-out">
             <img
               src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=500&h=500&fit=crop&crop=center"
               alt="Person working at desk"
