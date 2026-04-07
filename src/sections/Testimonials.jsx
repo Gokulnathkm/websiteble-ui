@@ -5,15 +5,15 @@ const Testimonials = () => {
         What people say
       </h2>
 
-      <div className="mt-8 bg-gray-50 rounded-2xl p-8 max-w-xl mx-auto shadow-sm">
-        <p className="text-gray-600 italic text-lg">
-          “This helped me actually understand and apply what I learn.”
-        </p>
+<div className="mt-10 bg-white border border-gray-200 rounded-2xl p-8 max-w-xl mx-auto shadow-sm">
+  <p className="text-gray-600 italic text-lg leading-relaxed">
+    “This helped me actually understand and apply what I learn.”
+  </p>
 
-        <h4 className="mt-4 font-medium text-gray-800">
-          — Student
-        </h4>
-      </div>
+  <h4 className="mt-6 font-medium text-gray-800">
+    — Student
+  </h4>
+</div>
     </section>
   );
 };

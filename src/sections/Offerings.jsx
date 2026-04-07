@@ -11,14 +11,14 @@ const Offerings = () => {
         What we offer
       </h2>
 
-      <ul className="mt-6 space-y-3 text-gray-600">
-        {offerings.map((item, i) => (
-          <li key={i} className="flex justify-center items-center gap-2">
-            <span>✔</span>
-            {item}
-          </li>
-        ))}
-      </ul>
+<ul className="mt-6 space-y-4 text-gray-600">
+  {offerings.map((item, i) => (
+    <li key={i} className="flex justify-center items-center gap-3 text-lg">
+      <span className="text-black">✔</span>
+      {item}
+    </li>
+  ))}
+</ul>
     </section>
   );
 };

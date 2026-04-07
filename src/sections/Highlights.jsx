@@ -15,11 +15,12 @@ const Highlights = () => {
       {cardData.map((item, i) => (
         <div
           key={i}
-          className="p-6 rounded-2xl border border-gray-200 bg-white hover:shadow-md transition duration-300"
+          className="p-6 rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
         >
           <h3 className="text-lg font-semibold text-gray-900">
             {item.title}
           </h3>
+
           <p className="mt-2 text-gray-500 leading-relaxed">
             {item.desc}
           </p>
