@@ -44,7 +44,6 @@ src/
 └── main.jsx
 
 ---
-
 ## Getting Started
 
 ### Clone the repository
