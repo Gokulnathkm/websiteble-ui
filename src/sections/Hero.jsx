@@ -25,7 +25,7 @@ const Hero = () => {
 
       {/* Purple half-circle decoration - right side */}
       <div className="absolute top-[25%] right-[5%] hidden md:block animate-float">
-        <div className="purple-half" style={{ width: '50px', height: '25px' }} />
+        <div className="purple-half" />
       </div>
 
       {/* Hero heading with highlights */}

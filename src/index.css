@@ -94,11 +94,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Purple half-circle blob */
 .purple-half {
-  width: 60px;
-  height: 30px;
+  width: 40px;
+  height: 70px;
   background: #7B2FF7;
-  border-radius: 60px 60px 0 0;
-  transform: rotate(-30deg);
+  border-radius: 0 70px 70px 0;
+  transform: rotate(-20deg);
 }
 
 /* Purple teardrop blob */

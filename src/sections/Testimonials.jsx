@@ -59,11 +59,6 @@ const Testimonials = () => {
           ))}
         </div>
       </div>
-
-      {/* Purple blob decoration - bottom right */}
-      <div className="absolute bottom-[10%] right-[5%] hidden md:block animate-float">
-        <div className="purple-blob" />
-      </div>
     </section>
   );
 };
