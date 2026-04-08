@@ -2,17 +2,17 @@ const Newsletter = () => {
   return (
     <section className="px-6 lg:px-12 py-20 md:py-28 max-w-[1400px] mx-auto">
       <div className="bg-brand-mint rounded-3xl px-6 md:px-12 lg:px-20 py-14 md:py-20 text-center relative hover:shadow-lg transition-all duration-300 ease-in-out">
-        {/* Purple half-circle - flat on left, curved on right, tilted like Figma */}
+        {/* Purple semicircle - flat left edge, curved right, matching Figma */}
         <div
           className="absolute hidden md:block"
           style={{
-            top: '15%',
-            right: '8%',
-            width: '140px',
-            height: '140px',
-            background: '#7B2FF7',
-            borderRadius: '0 140px 140px 0',
-            transform: 'rotate(20deg)',
+            top: '10%',
+            right: '5%',
+            width: '45px',
+            height: '90px',
+            background: '#7C3AED',
+            borderRadius: '0 90px 90px 0',
+            transform: 'rotate(25deg)',
           }}
         />
 
